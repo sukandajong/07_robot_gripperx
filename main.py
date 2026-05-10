@@ -24,8 +24,10 @@ def on_received_string(receivedString):
         basic.show_icon(IconNames.NO)
         iBIT.servo(ibitServo.SV2, 10)
     elif receivedString == "U":
+        basic.show_icon(IconNames.TRIANGLE)
         iBIT.servo(ibitServo.SV1, 90)
     elif receivedString == "D":
+        basic.show_icon(IconNames.LEFT_TRIANGLE)
         iBIT.servo(ibitServo.SV1, 10)
 radio.on_received_string(on_received_string)
 
